@@ -1,0 +1,89 @@
+.linePath{
+	stroke: blue;
+	fill: none;
+}
+
+.bar{
+	fill: steelblue;
+}
+
+.grid{
+	stroke: lightgrey;
+}
+
+.h_bar{
+	background-color: steelblue;
+	padding: 10px;
+	height: 10px;
+	text-align: right;
+	border-radius: 20px;
+	margin-bottom: 2px;
+	color: white;
+	width: 0px;
+}
+
+
+.round_corner{
+    height: 20px;
+	border-radius: 20px;
+	text-align: center;
+	color: white;
+	padding: 10px;
+	margin-bottom: 2px;
+}
+
+.subject{
+    border-radius: 20px;
+	text-align: center;
+	color: white;
+	width: 80px;
+	display: inline-block;
+	padding: 8px;
+}
+
+.subjects{
+    margin-top: 20px;
+
+}
+
+.box{
+    border: 1px solid grey;
+    margin-right: 2px;
+    padding: 8px;
+}
+
+.value{
+	display: inline-block;
+	width: 110px;
+    border: 1px solid black;
+    margin: 1px;
+    text-align: center;
+}
+
+.shape{
+   display: inline-block;
+   margin-right: 50px;
+}
+
+.line{
+	stroke: grey;
+	stroke-width: 2px;
+}
+
+.circle{
+	stroke: red;
+	stroke-width: 2px;
+	fill: none;
+}
+
+.square{
+	stroke: blue;
+	stroke-width: 2px;
+    fill: none;
+}
+
+.triangle{
+	stroke: green;
+	stroke-width: 2px;
+	fill: none;
+}
