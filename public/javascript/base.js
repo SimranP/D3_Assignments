@@ -33,7 +33,7 @@ var generateAxis =  function(_svg,_xScale,_yScale){
 		.classed('xAxis',true);
 
 	_svg.append('g')
-		.attr('transform', 'translate('+(+MARGIN.right)+', '+ MARGIN.left +')')
+		.attr('transform', 'translate('+(MARGIN.right)+', '+ MARGIN.left +')')
 		.call(yAxis)
 		.classed('yAxis',true);
 

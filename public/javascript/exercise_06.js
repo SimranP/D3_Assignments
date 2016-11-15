@@ -3,8 +3,8 @@ const INT_MARGIN = 3
 
 var createChart = function(){
     var container = d3.select("body").append("div").classed("shapes",true);
-    createCircle(container);
     createLine(container);
+    createCircle(container);
     createSquare(container);
     createTriangle(container);
 }

@@ -35,7 +35,7 @@ var updateData = function(data){
 	console.log(data);
 	d3.select(".linePath").remove();
 	var g = d3.select(".group");
-	var path = g.append('path'  ).classed("linePath",true);
+	var path = g.append('path').classed("linePath",true);
 
 	var line = d3.line()
 		.x(function(d,i) { return _xScale(i+1)})
