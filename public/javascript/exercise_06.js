@@ -3,8 +3,8 @@ const INT_MARGIN = 3
 
 var createChart = function(){
     var container = d3.select("body").append("div").classed("shapes",true);
-    createLine(container);
     createCircle(container);
+    createLine(container);
     createSquare(container);
     createTriangle(container);
 }
@@ -21,11 +21,11 @@ var createLine =  function(container){
 
 var createCircle = function(container){
     var svg =  appendSVG(container);
-    svg.append("circle")
-        .attr("cx",LENGTH/2+INT_MARGIN)
-        .attr("cy",LENGTH/2+INT_MARGIN)
-        .attr("r",LENGTH/2)
-        .classed("circle",true)
+        svg.append("circle")
+            .attr("cx",LENGTH/2+INT_MARGIN)
+            .attr("cy",LENGTH/2+INT_MARGIN)
+            .attr("r",LENGTH/2)
+            .classed("circle",true)
 }
 
 var createSquare = function(container){

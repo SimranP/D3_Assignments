@@ -10,20 +10,9 @@ var createChart = function(){
 
 	generateAxis(_svg,_xScale,_yScale);
 
-	// var xAxis = d3.axisBottom(_xScale).ticks(10);
-
-	// var yAxis = d3.axisLeft(_yScale).ticks(10);
-
-
-
 	var g = _svg.append('g')
 		.attr('transform', 'translate('+(MARGIN.right) +', '+ MARGIN.left +')')
 		.classed("group",true);
-
-	// _svg.append('g')
-	// 	.attr('transform', 'translate('+MARGIN.left+', '+(HEIGHT - MARGIN.top)+')')
-	// 	.call(xAxis)
-	// 	.classed('xAxis',true);
 
 	_svg.selectAll('.xAxis .tick')
 		.append('line')
@@ -32,11 +21,6 @@ var createChart = function(){
 		.attr('x2', 0)
 		.attr('y2', -INNER_HEIGHT)
 		.classed('grid', true);
-
-	// _svg.append('g')
-	// 	.attr('transform', 'translate('+(MARGIN.left)+', '+ MARGIN.left +')')
-	// 	.call(yAxis)
-	// 	.classed('yAxis',true);
 
 	_svg.selectAll('.yAxis .tick')
 		.append('line')
@@ -51,7 +35,7 @@ var updateData = function(data){
 	console.log(data);
 	d3.select(".linePath").remove();
 	var g = d3.select(".group");
-	var path = g.append('path').classed("linePath",true);
+	var path = g.append('path'  ).classed("linePath",true);
 
 	var line = d3.line()
 		.x(function(d,i) { return _xScale(i+1)})
