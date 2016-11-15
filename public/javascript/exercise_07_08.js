@@ -47,7 +47,6 @@ var createLine = function(data,g){
 }
 
 var createSinLine = function(data,g){
-
     var path = g.append('path').classed("linePath",true);
     var line = d3.line()
                 .x(function(d) { return _xScale(d.x/10)})
