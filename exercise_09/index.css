@@ -1,0 +1,16 @@
+.dot{
+    stroke: lightblue;
+    fill:white;
+}
+
+.linePath{
+    stroke: darkred;
+    stroke-width: 2px;
+    fill:none;
+}
+
+.sinlinePath{
+    stroke-width: 2px;
+    stroke: darkblue;
+    fill:none;
+}
