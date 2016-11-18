@@ -1,0 +1,10 @@
+.dot{
+    stroke: lightblue;
+    fill:white;
+}
+
+.area{
+    stroke-width: 2px;
+    stroke: steelblue;
+    fill: #c0d7f4;
+}
