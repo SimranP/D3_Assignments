@@ -1,0 +1,15 @@
+.dot{
+    stroke: lightblue;
+    fill:white;
+}
+
+.area{
+    fill: #c0d7f4;
+}
+
+
+.linePath{
+    stroke: steelblue;
+    stroke-width: 2px;
+    fill: none;;
+}
