@@ -44,7 +44,6 @@ var createArea = function(data,g,curveFunction){
                     .y(function(d) { return _yScale(formula(d)/10)})
                     .curve(curveFunction);
 
-
     path.attr('d',line(data));
 }
 
