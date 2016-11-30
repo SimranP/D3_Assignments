@@ -22,11 +22,10 @@ var random_nums = function(num,limit) {
 	return array;
 };
 
-var generateAxis =  function(_svg,_xScale,_yScale){
-	var xAxis = d3.axisBottom(_xScale).ticks(10);
+var generateAxis =  function(_svg,_xScale,_yScale,ticks){
+	var xAxis = d3.axisBottom(_xScale).ticks(ticks.x);
 
-	var yAxis = d3.axisLeft(_yScale).ticks(10);
-
+	var yAxis = d3.axisLeft(_yScale).ticks(ticks.y);
 	_svg.append('g')
 		.attr('transform', 'translate('+MARGIN.right+', '+(HEIGHT - MARGIN.top)+')')
 		.call(xAxis)
@@ -52,7 +51,19 @@ var generateAxis =  function(_svg,_xScale,_yScale){
 			.attr('y2',INNER_HEIGHT);
 };
 
+var subTicks = function(space){
+    var yAxis = d3.selectAll(".yAxis .tick line")
+                    .attr("x2",function(d){
+                        if(d%space == 0)
+                            return -7;
+                        return -4;
+                    });
 
+                    d3.selectAll(".yAxis .tick text").each(function(d,i){
+                        if(i%space!=0)
+                            d3.select(this).remove()
+                    })
+};
 
 
 var students_data = function(){
